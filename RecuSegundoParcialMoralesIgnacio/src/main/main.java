@@ -2,22 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
+
 /**
  *
  * @author Nacho utn
  */
 //Obviamente cambia las importaciones de las clases según tu proyecto.
-import models.Compra;
-import models.Electronico;
-import models.Producto;
-import models.Ropa;
+import model.Compra;
+import model.Electronico;
+import model.Producto;
+import model.Ropa;
 import services.GestorTienda;
+
 
 import java.util.List;
 import java.util.Optional;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         System.out.println("=== Pruebas de la tienda ===");
         try {
             //Nombres de los archivos de persistencia
