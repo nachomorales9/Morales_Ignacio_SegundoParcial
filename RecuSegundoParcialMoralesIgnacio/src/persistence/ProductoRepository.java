@@ -40,7 +40,7 @@ public class ProductoRepository implements Repository<Producto> {
         return new ArrayList<>(productos);
     }
 
-    private void guardarCambios() {
+    public void guardarCambios() {
         try {
             gestorPersistencia.guardar(productos);
         } catch (IOException e) {
