@@ -17,6 +17,14 @@ public abstract class Producto implements Serializable {
     private String nombre;
     private double precioBase;
 
+public void setPrecioBase(double precioBase) {
+    if (precioBase <= 0) {
+        throw new IllegalArgumentException("El precio base debe ser mayor a 0.");
+    }
+    this.precioBase = precioBase;
+}
+
+    
     public Producto(String nombre, double precioBase) {
         if (nombre == null || nombre.length() < 3) {
             throw new IllegalArgumentException("El nombre debe tener al menos 3 caracteres.");
