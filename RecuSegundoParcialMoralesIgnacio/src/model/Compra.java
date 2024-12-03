@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Compra implements Serializable {
-    private static int idCounter = 1;
+    private static int idCounter = 1; // Contador para IDs únicos
     private int idCompra;
     private String cliente;
     private List<Producto> productos;
@@ -25,6 +25,22 @@ public class Compra implements Serializable {
         this.cliente = cliente;
         this.productos = new ArrayList<>();
         this.total = 0;
+    }
+
+    public int getIdCompra() {
+        return idCompra;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public List<Producto> getProductos() {
+        return productos;
+    }
+
+    public double getTotal() {
+        return total;
     }
 
     public void agregarProducto(Producto producto) {
